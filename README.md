@@ -119,3 +119,22 @@ graph LR
 
     style A fill:#f3e5f5
 ```
+
+
+## 文档改进计划
+
+这个仓库整理 OpenHUTB 的项目入口和贡献说明，帮助参与者找到模拟器、开发工具与文档。计划从可以直接照着完成的操作步骤入手，核对命令、执行位置和检查结果。
+
+### 当前改进
+
+- [WSL 环境备份与恢复检查](https://github.com/OpenHUTB/.github/pull/430)：在注销发行版前导出环境，用独立名称导入后核对文件，说明停止环境与删除环境的区别。对应[问题 #425](https://github.com/OpenHUTB/.github/issues/425)。
+- [GitLab 配置修改后的应用步骤](https://github.com/OpenHUTB/.github/pull/431)：区分重启容器与重新应用 Compose 配置，补充配置校验、服务状态和日志检查。对应[问题 #426](https://github.com/OpenHUTB/.github/issues/426)。
+- [主仓库同步前的远程地址检查](https://github.com/OpenHUTB/.github/pull/432)：只在首次配置时添加 upstream，并核对实际地址后再获取、合并更新。对应[问题 #427](https://github.com/OpenHUTB/.github/issues/427)。
+
+### 后续检查
+
+1. 核对 GitLab 的外部访问地址与映射端口是否一致，检查网页访问、跳转地址和克隆地址，记录需要替换的示例值。见[问题 #428](https://github.com/OpenHUTB/.github/issues/428)。
+2. 对照当前仓库的构建触发条件，检查 Codespaces 提交后应去哪里查看结果，区分来源分支、主分支和 Pull Request 的检查记录。见[问题 #429](https://github.com/OpenHUTB/.github/issues/429)。
+3. 收到修改建议后，在原分支继续完善，并核对最终文件差异；修改合并后，再回看页面中的命令、链接和段落顺序。
+
+每项修改围绕一个具体问题展开，保留相邻步骤和已有示例，便于单独审核与后续维护。
